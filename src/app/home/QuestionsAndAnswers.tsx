@@ -1,4 +1,4 @@
-"use client"
+"use client"; 
 
 import { useState } from "react";
 import { Link } from "components/documentation";
@@ -74,9 +74,9 @@ const QAS = [
 ];
 
 export const QuestionsAndAnswers = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
